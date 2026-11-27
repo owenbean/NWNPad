@@ -1,0 +1,3 @@
+{
+  "install": "if ! (command -v x86_64-w64-mingw32-g++ >/dev/null && command -v x86_64-w64-mingw32-gcc >/dev/null && command -v make >/dev/null && command -v zip >/dev/null); then (sudo apt-get update || true) && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends g++-mingw-w64-x86-64 make zip; fi && (python3 -c 'import pefile' 2>/dev/null || python3 -m pip install --no-input pefile || python3 -m pip install --no-input --break-system-packages pefile)"
+}
